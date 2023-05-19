@@ -6,7 +6,7 @@ public class Person {
     private final String name;
     private final String surname;
     private int age;
-    private String city;
+    private String address;
 
     public Person(String name, String surname) {
         this.name = name;
@@ -32,15 +32,17 @@ public class Person {
         return hasAge() ? OptionalInt.of(age) : OptionalInt.empty();
     }
 
-    public boolean hasAge () {
+    public boolean hasAge() {
         return age != -1;
     }
 
-    public String getCity() {
-        return city;
+    public String getAddress() {
+        return address;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setAddress(String address) {
+        this.address = address;
     }
+
+
 }
