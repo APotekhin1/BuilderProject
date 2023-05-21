@@ -10,10 +10,10 @@ public class Main {
                 .setAge(31)
                 .setAddress("Сидней")
                 .build();
-//            Person son = mom.newChildBuilder()
-//                  .setName("Антошка")
-//                .build();
-//            System.out.println("У " + mom + " есть сын, " + son);
+        Person son = mom.newChildBuilder()
+                .setName("Антошка")
+                .build();
+        System.out.println("У " + mom + " есть сын, " + son);
 
         try {
             // Не хватает обязательных полей

@@ -47,14 +47,7 @@ public class PersonBuilder {
         return this;
     }
 
-    public PersonBuilder newChildBuilder() {
-        getSurname();
-        getAge();
-        getAddress();
-        return new PersonBuilder();
-    }
-
-    public Person build() {
+      public Person build() {
         if (name == null) {
             throw new IllegalStateException(
                     "Не введено обязательное поле: ИМЯ."

@@ -44,5 +44,11 @@ public class Person {
         this.address = address;
     }
 
+    public PersonBuilder newChildBuilder() {
+        getSurname();
+        getAge();
+        getAddress();
+        return new PersonBuilder();
+    }
 
 }
